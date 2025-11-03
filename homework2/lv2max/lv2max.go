@@ -29,15 +29,15 @@ func main() {
 	fmt.Printf("欢迎使用Go语言计算器\n")
 
 	fmt.Printf("请输入一个整数:")
-	fmt.Scan(&num1)
+	fmt.Scanf("%d", &num1)
 	for i := 1; ; i++ {
 		fmt.Printf("请输入操作符:")
-		fmt.Scan(&mark)
+		fmt.Scanf("%s", &mark)
 		if mark == "=" {
 			break
 		}
 		fmt.Printf("请输入一个整数:")
-		fmt.Scan(&num2)
+		fmt.Scanf("%d", &num2)
 		if i == 1 { //为第一次的sum赋值
 			sum = num1
 		}
